@@ -1,0 +1,49 @@
+
+.logo{
+    grid-area: logo;
+}
+.menu{
+    grid-area: menu;
+}
+.bigPhotp{
+    grid-area: bigPhoto;
+}
+.about{
+    grid-area: about;
+}
+.roadPic{
+    grid-area: roadPic;
+}
+.roadText{
+    grid-area: roadText;
+}
+.airPic{
+    grid-area: airPic;
+}
+.airText{
+    grid-area: airText;
+}
+.oceanPic{
+    grid-area: oceanPic;
+}
+.oceanText{
+    grid-area: oceanText;
+}
+
+.site{
+display: grid;
+grid-gap: 5px;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"logo"
+"menu"
+"bigPhoto"
+"about"
+"roadPic"
+"roadText"
+"airPic"
+"airText"
+"oceanPic"
+"oceanText";
+
+}
