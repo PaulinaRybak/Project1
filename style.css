@@ -2,8 +2,8 @@
 .logo{
     grid-area: logo;
 }
-.menu{
-    grid-area: menu;
+.nav{
+    grid-area: nav;
 }
 .bigPhotp{
     grid-area: bigPhoto;
@@ -38,14 +38,21 @@
 .oceanText{
     grid-area: oceanText;
 }
+.footer{
+    grid-area: footer;
+}
+/* .mian{
+    grid-area: main;
+} */
 
 .site{
 display: grid;
 grid-gap: 5px;
 grid-template-columns: 1fr;
 grid-template-areas: 
-"logo "
-"menu"
+"logo"
+"nav"
+/* "main" */
 "bigPhoto"
 "about"
 "road"
@@ -56,8 +63,9 @@ grid-template-areas:
 "airText"
 "ocean"
 "oceanPic"
-"oceanText";
-
+"oceanText"
+"footer";
+margin: 5%;
 }
 
 @media only screen and (min-width:577px){
@@ -66,9 +74,75 @@ grid-template-areas:
         grid-template-columns: 1fr 1fr ;
         grid-template-areas: 
         "logo logo"
-        "menu menu"
+        "nav nav"
         "bigPhoto bigPhoto"
-        "about about";
+        /* "main main" */
+        "about about"
+        "road road"
+        "roadPic roadText"
+        "air air"
+        "airPic airText"
+        "ocean ocean"
+        "oceanPic oceanText"
+        "footer footer";
+        margin: 10%;
 
     }
+}
+
+@media only screen and (min-width:976px){
+    .site{
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo logo logo logo logo logo"
+        "nav nav nav nav nav nav"
+        /* "main main main main main main" */
+        "bigPhoto bigPhoto bigPhoto bigPhoto about about"
+        "road road air air ocean ocean"
+        "roadPic roadText airPic airText oceanPic oceanText"
+        "footer footer footer footer footer footer";
+
+    }
+}
+.nav{
+   
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main{ 
+    background-color: teal;
+}
+#logo{
+    max-width: 100%;
+}
+.logo{
+    
+    display: flex;
+    
+    justify-content: center;
+}
+#mainphoto{
+    max-width: 95%;
+}
+#truck1{
+    max-width: 50%;
+}
+
+#plane{
+    max-width: 50%;
+}
+#ship1{
+    max-width: 50%;
+}
+
+.about{
+    border: blue solid 1px;
+}
+.road{
+    border: teal solid 2px;
 }
