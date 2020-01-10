@@ -120,6 +120,7 @@ justify-content: center;
     
 }
 .nav{
+   background-color: #7aa6c7;
    
 }
 .menu{
@@ -136,7 +137,7 @@ a{
 
 }
 a:link{
-    color: black;
+    color: rgb(107, 54, 54);
     font-weight: bold;
 }
 a:hover{
@@ -189,4 +190,7 @@ p{
     font-weight: bold;
     
     background-color: #c5cac3;
+}
+.contact{
+    background-color:#acccd9 ;
 }
