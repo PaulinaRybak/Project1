@@ -5,7 +5,7 @@
 .nav{
     grid-area: nav;
 }
-.bigPhotp{
+.bigPhoto{
     grid-area: bigPhoto;
 }
 .about{
@@ -38,6 +38,9 @@
 .oceanText{
     grid-area: oceanText;
 }
+.contact{
+    grid-area:contact;
+}
 .footer{
     grid-area: footer;
 }
@@ -46,6 +49,7 @@
 } */
 
 .site{
+font-family: 'Poppins', sans-serif;
 display: grid;
 grid-gap: 5px;
 grid-template-columns: 1fr;
@@ -64,46 +68,56 @@ grid-template-areas:
 "ocean"
 "oceanPic"
 "oceanText"
+"contact"
 "footer";
 margin: 5%;
+justify-content: center;
+
 }
 
 @media only screen and (min-width:577px){
     .site{
         grid-gap:10px;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "logo logo"
-        "nav nav"
-        "bigPhoto bigPhoto"
-        /* "main main" */
-        "about about"
-        "road road"
-        "roadPic roadText"
-        "air air"
-        "airPic airText"
-        "ocean ocean"
-        "oceanPic oceanText"
-        "footer footer";
+        "logo logo logo logo"
+        "nav nav nav nav"
+        "bigPhoto bigPhoto bigPhoto bigPhoto"
+        "about about about about"
+        "road road road road"
+        "roadPic roadPic roadText roadText"
+        "air air air air"
+        "airPic airPic airText airText"
+        "ocean ocean ocean ocean"
+        "oceanPic oceanPic oceanText oceanText"
+        "contact contact contact contact"
+        "footer footer footer footer";
         margin: 10%;
-
+        
     }
+    
 }
 
-@media only screen and (min-width:976px){
+@media only screen and (min-width:997px){
     .site{
         grid-gap: 15px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "logo logo logo logo logo logo"
         "nav nav nav nav nav nav"
-        /* "main main main main main main" */
-        "bigPhoto bigPhoto bigPhoto bigPhoto about about"
-        "road road air air ocean ocean"
-        "roadPic roadText airPic airText oceanPic oceanText"
-        "footer footer footer footer footer footer";
+        "bigPhoto bigPhoto bigPhoto bigPhoto bigPhoto bigPhoto"
+        "about about about about about about"
+        "road road road road road road"
+        "roadPic roadPic roadPic roadText roadText roadText"
+        "air air air air air air" 
+        "airPic airPic airPic airText airText airText"
+        "ocean ocean ocean ocean ocean ocean"
+        "oceanPic oceanPic oceanPic oceanText oceanText oceanText"
+        "contact contact contact contact contact contact"
+        "footer footer footer footer footer footer"; 
 
     }
+    
 }
 .nav{
    
@@ -112,8 +126,22 @@ margin: 5%;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
 }
+a{
+ text-decoration: none;
 
+}
+a:link{
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: cadetblue;
+}
 .main{ 
     background-color: teal;
 }
@@ -127,22 +155,38 @@ margin: 5%;
     justify-content: center;
 }
 #mainphoto{
-    max-width: 95%;
+    max-width: 100%;
 }
 #truck1{
-    max-width: 50%;
+    max-width: 100%;
 }
 
 #plane{
-    max-width: 50%;
+    max-width: 100%;
 }
 #ship1{
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .about{
-    border: blue solid 1px;
+    
+    background-color:#acccd9;
 }
-.road{
-    border: teal solid 2px;
+
+
+h2{
+    text-align: center;
+}
+h4{
+    margin: 0;
+    padding-bottom: 0;
+}
+p{
+    margin: 0;
+}
+.road, .air, .ocean{
+    text-align: center;
+    font-weight: bold;
+    
+    background-color: #c5cac3;
 }
