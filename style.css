@@ -51,6 +51,7 @@
 
 
 .site{
+    background-color:#d9dde2 ;
 font-family: 'Poppins', sans-serif;
 display: grid;
 grid-gap: 5px;
@@ -76,7 +77,16 @@ justify-content: center;
 font-size: 0.75rem;
 
 }
-
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 0;
+    text-decoration: none;
+    
+    
+}
 @media only screen and (min-width:577px){
     .site{
         grid-gap:10px;
@@ -98,6 +108,10 @@ font-size: 0.75rem;
         margin-right: 10%;
         font-size: 0.85rem;
     }
+    .menu{
+        margin: 10px;
+        font-size: 18px;
+    }
     
 }
 
@@ -108,7 +122,8 @@ font-size: 0.75rem;
         grid-template-areas: 
         "logo logo logo logo logo logo"
         "nav nav nav nav nav nav"
-        "bigPhoto bigPhoto bigPhoto bigPhoto about about"
+        ".  bigPhoto bigPhoto bigPhoto bigPhoto ."
+        "about about about about about about "
         "road road road road road road"
         "roadPic roadPic roadPic roadText roadText roadText"
         "air air air air air air" 
@@ -121,26 +136,19 @@ font-size: 0.75rem;
 
     }
     
+    
 }
 .nav{
    background-color: #7aa6c7;
    
 }
-.menu{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    
-}
+
 a{
  text-decoration: none;
 
 }
 a:link{
-    color: rgb(107, 54, 54);
+    color: rgb(39, 35, 35);
     font-weight: bold;
 }
 a:hover{
@@ -160,7 +168,7 @@ a:hover{
 }
 #mainphoto{
     max-width: 100%;
-}
+} 
 #truck1{
     max-width: 100%;
 }
@@ -173,7 +181,7 @@ a:hover{
 }
 
 .about{
-    
+    padding: 20px;
     background-color:#acccd9;
 }
 
@@ -193,6 +201,11 @@ p{
     font-weight: bold;
     
     background-color: #c5cac3;
+}
+
+.roadText, .airText, .oceanText{
+    padding: 20px;
+    background-color: #e2e1d5;
 }
 .contact{
     background-color:#acccd9;
