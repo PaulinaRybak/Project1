@@ -51,7 +51,7 @@
 
 
 .site{
-    background-color:#d9dde2 ;
+background-color:#d9dde2 ;
 font-family: 'Poppins', sans-serif;
 display: grid;
 grid-gap: 5px;
@@ -74,7 +74,7 @@ grid-template-areas:
 "footer";
 margin: 5%;
 justify-content: center;
-font-size: 0.75rem;
+font-size: 0.9rem;
 
 }
 .menu{
@@ -132,7 +132,7 @@ font-size: 0.75rem;
         "oceanPic oceanPic oceanPic oceanText oceanText oceanText"
         "contact contact contact contact contact contact"
         "footer footer footer footer footer footer";
-         font-size: 1rem;
+        font-size: 1rem;
 
     }
     
@@ -147,23 +147,24 @@ a{
  text-decoration: none;
 
 }
-a:link{
-    color: rgb(39, 35, 35);
+li a:link{
+    color: black;
     font-weight: bold;
 }
-a:hover{
-    color: cadetblue;
+li a:hover{
+    color:#d9dde2 ;
+}
+li a:visited{
+    color:teal;
 }
 .main{ 
-    background-color: teal;
+    background-color: #7aa6c7;
 }
 #logo{
     max-width: 100%;
 }
 .logo{
-    
     display: flex;
-    
     justify-content: center;
 }
 #mainphoto{
@@ -209,4 +210,27 @@ p{
 }
 .contact{
     background-color:#acccd9;
+    text-align: center;
+}
+.footer{
+    display: inline-block;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color:#7aa6c7;
+}
+
+.fa{
+    padding: 10px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: black;
+    
+}
+.fa:link{
+    font-size: 25px;   
+}
+.fa:hover{
+    color: #d9dde2;
 }
